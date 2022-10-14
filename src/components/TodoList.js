@@ -1,13 +1,9 @@
 import React from 'react'
 import Todo from './Todo'
 
-const TodoList = ({ todos }) => {
+const TodoList = ({ todos, setTodos }) => {
   return (
-    <div>
-        <ul>
-            <Todo />
-        </ul>
-    </div>
+      <Todo todos={todos} setTodos={setTodos} />
   )
 }
 

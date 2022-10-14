@@ -17,7 +17,7 @@ const Form = ({ todoInput, setTodoInput, todos, setTodos }) => {
   return (
     <form className='form'>
         <input className='input' value={todoInput} onChange={(e) => todoInputHandler(e)}/>
-        <button className='btn' onClick={(e) => submitHandler(e)}>Add Todo</button>
+        <button className='btn' onClick={(e) => submitHandler(e)}>+</button>
     </form>
   )
 }

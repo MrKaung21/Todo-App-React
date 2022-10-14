@@ -1,12 +1,25 @@
 import React from 'react'
 
-const Todo = () => {
+const Todo = ({ todos, setTodos }) => {
+  const todoDelete = (id) => {
+    setTodos([...todos, todos.filter((todo) => todo.id != id)])
+  }
   return (
-    <div>
-        <li>hello</li>
-        <button>check</button>
-        <button>delete</button>
-    </div>
+    <>
+      {todos.map((todo) => {
+        return (
+          <div className='todoContainer' key={todo.id}>  
+            <ul className='todolist'>
+              <li className='todoText'>{todo.text}</li>
+            </ul>
+            <div className="btnGroup">
+              <button className="todoCheck">check</button>
+              <button className="todoDelete" onClick={(id) => todoDelete(id)}>delete</button>
+            </div>
+          </div>
+        )
+      })}
+    </>   
   )
 }
 
