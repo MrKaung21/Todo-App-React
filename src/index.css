@@ -98,6 +98,9 @@ code {
 .todoComplete {
   text-decoration: line-through;
   color: skyblue;
+  
+  padding:  10px;
+  border-radius: .5rem;
 }
 
 .btnGroup {
