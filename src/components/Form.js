@@ -37,8 +37,10 @@ const Form = ({ todoInput, setTodoInput, todos, setTodos, editTodo, setEditTodo 
   }
 
   return (
+    
     <form className='form'>
-        <input placeholder='Enter a todo...' required className='input' value={todoInput} onChange={(e) => todoInputHandler(e)}/>
+        
+        <input placeholder='Enter a todo...' required className='input inputGradient' value={todoInput} onChange={(e) => todoInputHandler(e)}/>
         <button className='btn' onClick={(e) => submitHandler(e)}>{editTodo ? <BsCheckLg /> : <BiAddToQueue />}</button>
     </form>
   )

@@ -5,7 +5,7 @@
 
 body {
   margin: 0;
-  background-color: rgba(0, 0, 0, 0.945);
+  background-color: whitesmoke;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -20,6 +20,7 @@ code {
 
 .App {
   /* height: 100vh; */
+  
 
   display: flex;
   flex-direction: column;
@@ -42,46 +43,58 @@ code {
 
 .input {
   width: 100%;
-  height: 3rem;
+  height: 4rem;
 
-  color: green;
-  background-color: rgba(0, 0, 0, 0.945);
+  color: #0A155A;
+  background-color: white;
 
   text-align: start;
   padding-left: 20px;
   font-size: 1.5rem;
   outline: none;
-  border: 2px solid green;
+  border: double 4px transparent;
+  
+  background-image: linear-gradient(white, white), radial-gradient(circle at top left, pink, skyblue);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
   
   border-radius: 2rem;
   margin-right: 2rem;
 }
 
-.btn {
-  width: 4rem;
-  height: 3rem;
+/* .inputGradient {
+  border-image-source: linear-gradient(to left, pink, skyblue);
+  
+} */
 
-  color: green;
+.btn {
+  width: 5rem;
+  height: 4rem;
+
+  color: white;
   font-size: 1.5rem;
   text-transform: uppercase;
-  background-color: rgba(0, 0, 0, 0.945);
-  /* border-radius: 100%; */
-  border: 2px solid green;
-  border-radius: 1rem;
+  background-color: #d400ff;
+  border-radius: 100%;
+  
   cursor: pointer;
   outline: none;
+  border: none;
+
+  display: grid;
+  place-items: center;
 }
 
 
 
 .todoContainer {
   width: 80%;
-  color: green;
-  background-color: black;
+  color: #BBC2D8;
+  background-color: #0A155A;
 
   font-size: 1.5rem;
   padding: 0 2rem;
-  border-radius: .5rem;
+  border-radius: 2rem;
   margin-bottom: 1rem;
   
   display: flex;
@@ -111,28 +124,70 @@ code {
 }
 
 .todoCheck {
+  width: 2.5rem;
+  height: 2.5rem;
+
   border: none;
   outline: none;
-  color: rgb(14, 165, 14);
+  color: #BBC2D8;
   font-size: 1.3rem;
   background-color: black;
   cursor: pointer;
+  border-radius: 100%;
+
+  display: grid;
+  place-items: center;
 }
 
 .todoDelete {
-  border: none;
-    outline: none;
-    color: red;
-    font-size: 1.3rem;
-    background-color: black;
-  cursor: pointer;
-}
+  width: 2.5rem;
+  height: 2.5rem;
 
-.todoEdit {
   border: none;
   outline: none;
-  color: rgb(18, 22, 238);
+  color: #BBC2D8;
   font-size: 1.3rem;
   background-color: black;
   cursor: pointer;
+  border-radius: 100%;
+  
+  display: grid;
+  place-items: center;
 }
+
+.todoEdit {
+  width: 2.5rem;
+  height: 2.5rem;
+
+  border: none;
+  outline: none;
+  color: #BBC2D8;
+  font-size: 1.3rem;
+  background-color: black;
+  cursor: pointer;
+  border-radius: 100%;
+
+  display: grid;
+  place-items: center;
+}
+
+.todoContainer:nth-of-type(1) {
+  color: #0A155A;
+  background-color: pink;
+}
+
+.todoContainer:nth-of-type(2) {
+  color: #0A155A;
+  background-color: skyblue;
+}
+
+.todoContainer:nth-of-type(3) {
+  color: #0A155A;
+  background-color: rgba(245, 245, 10, 0.719);
+}
+
+.todoContainer:nth-of-type(4) {
+  color: #0A155A;
+  background-color: rgb(243, 99, 243);
+}
+
