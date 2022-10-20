@@ -89,8 +89,8 @@ code {
 
 .todoContainer {
   width: 80%;
-  color: #BBC2D8;
-  background-color: #0A155A;
+  /* color: #0A155A; */
+  /* background-color: #0A155A; */
 
   font-size: 1.5rem;
   padding: 0 2rem;
@@ -171,22 +171,22 @@ code {
   place-items: center;
 }
 
-.todoContainer:nth-of-type(1) {
+.todoContainer:nth-child(4n+1) {
   color: #0A155A;
   background-color: pink;
 }
 
-.todoContainer:nth-of-type(2) {
+.todoContainer:nth-child(4n+2) {
   color: #0A155A;
   background-color: skyblue;
 }
 
-.todoContainer:nth-of-type(3) {
+.todoContainer:nth-child(4n+3) {
   color: #0A155A;
   background-color: rgba(245, 245, 10, 0.719);
 }
 
-.todoContainer:nth-of-type(4) {
+.todoContainer:nth-child(4n+4) {
   color: #0A155A;
   background-color: rgb(243, 99, 243);
 }
